@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Table Website.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Table Generator:</h1>
+    <div class="container">
+        <label for="enternumber">
+            Enter Number:<input type="number" id="enternumber" placeholder="Enter the table number">
+        </label>
+        <br>
+        <br>
+        <label for="enterlimit">
+            Enter Limit:<input type="number" id="enterlimit" placeholder="Enter the limit number">
+        </label>
+        <br>
+    <br>
+    <br>
+    <div class="but">
+    <button onclick="card()">CLICK HERE</button>
+</div>
+    <br>
+    <br>
+    <div class="reset">
+    <button onclick="Reset()">Reset</button>
+</div>
+    <br>
+</div>
+    <h2>Generated Table:</h2>
+    <div class="table">
+<table id="maintableoutput">
+</table>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

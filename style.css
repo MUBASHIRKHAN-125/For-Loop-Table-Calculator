@@ -43,6 +43,9 @@ label{
     width: 230px;
     height: 22px;
 }
+tr,td{
+    border: 1px solid black;
+}
 input{
     border-radius: 6px;
 }

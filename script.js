@@ -6,7 +6,7 @@ function  card()
 
     for(let i=1; i <= myLimitNumber; i++)
     {
-     output += `<tr><td>${myEnterNumber}</td><td> * </td><td>${i}</td><td>=</td><td>${myEnterNumber * i}</td> <br>`;
+     output += `<tr><td>${myEnterNumber}</td><td>x</td><td>${i}</td><td>=</td><td>${myEnterNumber * i}</td></tr>`;
     }
     document.getElementById("maintableoutput").innerHTML = output;
 }

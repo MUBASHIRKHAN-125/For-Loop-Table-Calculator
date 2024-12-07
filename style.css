@@ -1,22 +1,20 @@
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: #f4f4f9;
+    background-image:linear-gradient( to left bottom , #c4d7e6 50%, #66a5ad 50%, #66a5ad 50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial Rounded MT;
 }
-h2{
-    text-align: center;
+#head h1{
+text-align: center;
+transition-property: all;
+transition-duration: 0.3s;
+transition-delay: 0.1s;
+transition-timing-function: ease-in-out;
 }
-h1{
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-align: center;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-label{
-    font-size: 25px;
+#head  h1:hover{
+    text-shadow: 5px 7px 10px rgb(61, 56, 56);
 }
 .but button{
     padding: 8px 25px;
@@ -33,51 +31,6 @@ label{
     transform: scale(1.2);
     box-shadow: 2px 5px 10px #000000;
 }
-#enternumber{
-    margin-left: 12px;
-    width: 230px;
-    height: 22px;
-}
-#enterlimit{
-    margin-left: 46px;
-    width: 230px;
-    height: 22px;
-}
-tr,td{
-    border: 2px solid rgb(116, 18, 18);
-    padding: 5px 19px;
-}
-input{
-    border-radius: 6px;
-}
-input::placeholder{
-    font-style: italic;
-    color: gray;
-    text-align: center;
-    font-size: 15px;
-}
-.table{
-    display: flex;
-    justify-content: center;
-}
-#maintableoutput{
-    border-radius: 8px;
-    border: 2px solid black;
-    cursor: default;
-    font-size: 25px;
-    /* width: 250px; */
-    /* height: 100px; */
-    text-align: center;
-    color: #3a078b;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-delay: 0.1s;
-    transition-timing-function: ease-in-out;
-}
-#maintableoutput:hover{
-    background-color: #7bb7ca;
-    box-shadow: 2px 6px 10px #3a078bcf;
-}
 .reset button{
     padding: 5px 28px;
     border: 2px solid darkblue;
@@ -92,4 +45,66 @@ input::placeholder{
 .reset button:hover{
     transform: scale(1.2);
     box-shadow: 1px 7px 10px black;
+} 
+.mainallcontainer{
+display: flex;
+justify-content: center;
+column-gap: 40px;
+margin-top: 90px;
+}
+.containerinput1{
+    border: 4px solid rgb(13, 90, 42);
+    max-height: 350px;
+    padding: 0px 22px;
+    padding-bottom: 30px;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+}
+.containerinput1:hover{
+    box-shadow: 4px 4px 8px purple;
+}
+label{
+font-size: 20px;
+}
+input{
+   height: 20px;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+input::placeholder{
+font-style: italic;
+text-align: center;
+color: rgb(107, 100, 100);
+}
+ #enterlimit{
+    margin-left: 30px;
+}
+ #enternumber{
+    margin-left: 3px;
+}
+.container2{
+    border: 4px solid  rgb(13, 90, 42);
+    padding: 10px 22px;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+}
+.container2:hover{
+box-shadow: 4px 4px 8px purple;
+}
+.butres{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 12px;
+}
+table{
+    border-collapse: collapse;
+}
+tr , td {
+border: 2px solid rgb(99, 22, 22);
+padding: 5px 15px;
 }

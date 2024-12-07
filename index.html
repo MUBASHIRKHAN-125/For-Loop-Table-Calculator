@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="head">
+    <h1>WELCOME TO MY CALCULATOR TABLE!</h1>
+</div>
+    <div class="mainallcontainer">
+<div class="containerinput1">
     <h1>Table Generator:</h1>
-    <div class="container">
         <label for="enternumber">
             Enter Number:<input type="number" id="enternumber" placeholder="Enter the table number">
         </label>
@@ -17,23 +21,24 @@
         <label for="enterlimit">
             Enter Limit:<input type="number" id="enterlimit" placeholder="Enter the limit number">
         </label>
-        <br>
     <br>
     <br>
+    <br>
+    <div class="butres">
     <div class="but">
     <button onclick="card()">CLICK HERE</button>
-</div>
-    <br>
-    <br>
+    </div>
     <div class="reset">
     <button onclick="Reset()">Reset</button>
+    </div>
 </div>
-    <br>
 </div>
+   <div class="container2">
+    <div class="generatedtable">
     <h2>Generated Table:</h2>
-    <div class="table">
-<table id="maintableoutput">
-</table>
+<table id="maintableoutput"></table>
+</div>
+</div>
 </div>
     <script src="script.js"></script>
 </body>
